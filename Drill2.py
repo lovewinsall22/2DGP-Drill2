@@ -57,7 +57,7 @@ while True:
         grass.draw_now(400, 30)
         charLocx = centerx + r * math.cos(math.radians(angle))
         charLocy = centery + r * math.sin(math.radians(angle))
-        angle = (angle + 2) % 360
+        angle = (angle - 2) % 360
         character.draw_now(charLocx, charLocy)
         delay(0.01)
         if angle == 270: rect = True
